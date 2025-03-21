@@ -44,12 +44,16 @@
         </nav>
     </header>
     <h1>Feedback</h1>
-    <form action="thank_you.html"> First name:<br> <input type="text" name="firstname"><br> Last name:<br> <input type="text" name="lastname"><br>
-        <input type="radio" name="gender" value="male" checked> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other<br>
-        <input type="submit" value="Submit">
-      </form>
+    <div class="container mt-3">
+        <p>Please feel free to give us feedback and remember, we keep you anonymous ;).:</p>
+  <form action="thank_you.html">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
       <footer>
         CONTACT US: 
     Phone: +267 72 123 456<br>E-mail: <E-mail>kicks2kick@gmail.com</E-mail><br><p>© 2021 Kicks2Kick. All Rights Reserved.</p>
