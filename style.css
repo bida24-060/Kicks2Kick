@@ -72,3 +72,24 @@ nav {
 }
 
 
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+}
+
+
+
