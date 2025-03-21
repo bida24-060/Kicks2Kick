@@ -91,5 +91,25 @@ nav {
     border-radius: 10px;
 }
 
+.accessories-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.accessories-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accessories-item img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+}
+
+
 
 
