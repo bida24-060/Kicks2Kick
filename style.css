@@ -43,6 +43,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color:  #4CAF50;
 
 }
 
@@ -69,9 +70,6 @@ nav {
     bottom: 0;
     width: 100%;
 
-}
-
-nav :hover {background-color: #4CAF50;
 }
 
 
