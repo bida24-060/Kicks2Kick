@@ -71,6 +71,9 @@ nav {
 
 }
 
+nav :hover {background-color: #4CAF50;
+}
+
 
 .product-gallery {
     display: flex;
