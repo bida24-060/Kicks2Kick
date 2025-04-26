@@ -109,6 +109,10 @@ nav {
     border-radius: 10px;
 }
 
+/*Dropdown Menu*/
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 
 
