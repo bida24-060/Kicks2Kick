@@ -83,13 +83,6 @@ nav {
     margin-bottom: 20px;
 }
 
-.product-item img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #4CAF50;
-    border-radius: 10px;
-}
-
 .accessories-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -102,12 +95,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.accessories-item img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #4CAF50;
-    border-radius: 10px;
-}
+
 
 /*Dropdown Menu*/
 .nav-item.dropdown:hover .dropdown-menu {
