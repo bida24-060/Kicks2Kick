@@ -1,88 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header> 
-       <!-- Navigation -->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <div class="container">
-           <a class="navbar-brand" href="index.html">Kicks2Kick</a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarNav">
-             <ul class="navbar-nav">
-               <li class="nav-item">
-                 <a class="nav-link" href="index.html">HOME</a>
-               </li>
-               <li class="nav-item">
-            <a class="nav-link" href="products.html">PRODUCTS</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="accessories.html">ACCESSORIES</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="aboutus.html">ABOUT US</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="contactus.html">CONTACT US</a>
-               </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="feedback.html">FEEDBACK</a>
-                </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                 <!-- Logo and brand name -->
+                 <a class="navbar-brand" href="index.html">
+                    <img src="Kicks2Kick__1_-removebg-preview.png" alt="Kicks2Kick log" style="height: 40px; width: auto;">Kicks2Kick
+                </a>
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!--Drop down nav item-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop by Brand
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="nike.html">Nike</a></li>
+                                <li><a class="dropdown-item" href="adidas.html">Adidas</a></li>
+                                <li><a class="dropdown-item" href="newbalance.html">Newbalance</a></li>
+                                <li><a class="dropdown-item" href="puma.html">Puma</a></li>
+                                <li><a class="dropdown-item" href="diadora.html">Diadora</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accessories.html">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-    <h1>Contact Us</h1>
-    <p>We would love to hear from you! Whether you have a question about our products, need assistance with an order, or just want to share your feedback, our team at Kicks2Kick is here to help. Get in touch with us through any of the following methods:
-<br>
-<h3>Customer Support</h3>
-
-If you need assistance or have questions about our products, sizing, shipping, or returns, our dedicated support team is available to assist you.
-
-Email: support@kicks2kick.com
-Phone: +267 74562810
-Business Hours: Monday - Friday, 9 AM to 6 PM (CAT)
-Location: Wharic Park, plot 1059
-
-If you'd like to visit us in person or have a question regarding our physical store, feel free to stop by:
-
-Kicks2Kick Headquarters
-plot 1059, Wharic Park
-Gaborone, Botswana
-<br>
-<h3>Social Media</h3>
-
-Stay connected with us and be the first to know about new releases, promotions, and football news! You can follow us on:
-
-Instagram: @Kicks2Kick
-Facebook: Kicks2KickOfficial
-Twitter: @Kicks2Kick
-Feedback & Suggestions
-<br>
-Your opinion matters to us! If you have any suggestions on how we can improve our products or services, we would love to hear from you. Please send your feedback to feedback@kicks2kick.com.
-We look forward to hearing from you and are excited to assist with any of your football needs. Thanks for choosing Kicks2Kick!
-</p>
-<footer>
-  CONTACT US: 
-  Phone: +267 72 123 456<br>E-mail: <E-mail>kicks2kick@gmail.com</E-mail><br><p>© 2021 Kicks2Kick. All Rights Reserved.</p>
-  </main>
-</footer>
-<!-- Bootstrap JS and dependencies -->
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+    <!--Contact Welcome-->
+    <div class="container mt-5">
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center">We would love to hear from you! Please fill out the form below.</p>
+        <form class="mt-4" action="contact.html" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
