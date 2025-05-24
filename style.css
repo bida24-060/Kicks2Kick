@@ -104,6 +104,7 @@ nav {
     border-radius: 10px !important; /* Rounded corners */
     padding: 20px !important; /* Add some padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a subtle shadow */
+    color: #fff !important; /* Ensure text is white for contrast */
 }
 
 /* Set the background color of the entire page to black */
@@ -118,6 +119,11 @@ nav {
     border-radius: 10px !important; /* Rounded corners */
     padding: 20px !important; /* Add some padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a subtle shadow */
+    color: #fff !important; /* Ensure text is white for contrast */
+}
+
+.mb-3 {
+    color: #333;
 }
 
 
