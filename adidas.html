@@ -258,23 +258,28 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script>
-        // Example for script.js or inside a <script> tag on product pages
+   
+// Add to Bag functionality using localStorage
+
 function addToCart(item) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push(item);
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// Example usage in your event listener:
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function() {
-        const name = button.getAttribute('data-name');
-        const price = parseFloat(button.getAttribute('data-price'));
-        const id = button.getAttribute('data-id');
-        const size = document.getElementById('size-' + id)?.value || 'N/A';
-        const color = document.getElementById('color-' + id)?.value || 'N/A';
-        addToCart({ name, price, size, color });
-        alert('Added to bag!');
+// Attach event listeners to all Add to Bag buttons after DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            const name = button.getAttribute('data-name');
+            const price = parseFloat(button.getAttribute('data-price'));
+            const id = button.getAttribute('data-id');
+            const size = document.getElementById('size-' + id)?.value || 'N/A';
+            const color = document.getElementById('color-' + id)?.value || 'N/A';
+            addToCart({ name, price, size, color });
+            // Optional: Give user feedback
+            alert('Added to bag!');
+        });
     });
 });
 </script>
