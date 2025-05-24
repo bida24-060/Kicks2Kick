@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up - Kicks2Kick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100" id="login-container">
+        <!-- Login Form -->
+        <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
+            <h2 class="text-center mb-4">Sign Up</h2>
+            <form>
+                <!--First Name-->
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter your firstname" required>
+                </div>
+                <!--Last Name-->
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter your lastname" required>
+                </div>
+                <!--Date of Birth-->
+                <div class="mb-3">
+                    <label for="birth-date" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth" required>
+                </div>
+                <!--Email-->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <!--Username-->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                </div>
+                <!--Password-->
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle form submission
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert('Form submitted successfully!');
+            // Here you can add code to handle the form data, e.g., send it to a server
+        });
+    </script>
+</body>
+</html>
