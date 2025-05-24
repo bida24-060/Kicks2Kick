@@ -7,21 +7,6 @@
     <title>Bag - Kicks2Kick</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-        }
-        #bag-container {
-            background-color: #333;
-            border-radius: 10px;
-            padding: 24px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        .remove-btn {
-            float: right;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -75,38 +60,38 @@
         </div>
     </div>
     <script>
-        // Load cart from localStorage or initialize empty
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cart = [];
+const cartItems = document.getElementById('cart-items');
+const cartTotal = document.getElementById('cart-total');
 
-        const cartItems = document.getElementById('cart-items');
-        const cartTotal = document.getElementById('cart-total');
-        const checkoutBtn = document.getElementById('checkout-btn');
+// Attach event listeners to all Add to Bag buttons
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+        const id = button.getAttribute('data-id');
+        const sizeSelect = document.getElementById('size-' + id);
+        const colorSelect = document.getElementById('color-' + id);
+        const size = sizeSelect ? sizeSelect.value : 'N/A';
+        const color = colorSelect ? colorSelect.value : 'N/A';
 
-        function updateCartDisplay() {
-            cartItems.innerHTML = '';
-            let total = 0;
+        cart.push({ name, price, size, color });
+        updateCart();
+    });
+});
 
-            if (cart.length === 0) {
-                cartItems.innerHTML = '<li class="list-group-item bg-dark text-white text-center">Your bag is empty.</li>';
-                checkoutBtn.disabled = true;
-            } else {
-                cart.forEach((item, idx) => {
-                    const li = document.createElement('li');
-                    li.className = 'list-group-item d-flex justify-content-between align-items-center bg-dark text-white';
-                    li.innerHTML = `
-                        <span>
-                            ${item.name} (Size: ${item.size}, Color: ${item.color}) - P${item.price.toFixed(2)}
-                        </span>
-                        <button class="btn btn-danger btn-sm remove-btn" data-index="${idx}">Remove</button>
-                    `;
-                    cartItems.appendChild(li);
-                    total += item.price;
-                });
-                checkoutBtn.disabled = false;
-            }
-            cartTotal.innerHTML = `<strong>Total: P${total.toFixed(2)}</strong>`;
-        }
-
+function updateCart() {
+    cartItems.innerHTML = '';
+    let total = 0;
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.textContent = `${item.name} (Size: ${item.size}, Color: ${item.color}) - P${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+        total += item.price;
+    });
+    cartTotal.textContent = `Total: P${total.toFixed(2)}`;
+}
         // Remove item from cart
         cartItems.addEventListener('click', function(e) {
             if (e.target.classList.contains('remove-btn')) {
