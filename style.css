@@ -123,7 +123,7 @@ nav {
 }
 
 .mb-3 {
-    color: #333;
+    color: #333 !important; /* Dark grey text for better readability */
 }
 
 
