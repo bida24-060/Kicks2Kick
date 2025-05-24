@@ -93,7 +93,7 @@ nav {
 }
 
 /* Set the background color of the entire page to black */
-body {
+#signup-container {
     background-color: #000; /* Black background */
     color: #fff; /* White text for better contrast */
 }
@@ -107,7 +107,7 @@ body {
 }
 
 /* Set the background color of the entire page to black */
-body {
+#login-body {
     background-color: #000; /* Black background */
     color: #fff; /* White text for better contrast */
 }
