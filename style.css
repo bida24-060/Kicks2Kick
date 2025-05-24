@@ -92,40 +92,9 @@ nav {
     display: block;
 }
 
-/* Set the background color of the entire page to black */
-#signup-body {
-    background-color: #000 !important; /* Black background */
-    color: #fff !important; /* White text for better contrast */
+.btn btn-primary w-100 {
+    color: limegreen;
 }
-
-/* Style the login container */
-#signup-container {
-    background-color: #333 !important; /* Dark grey background */
-    border-radius: 10px !important; /* Rounded corners */
-    padding: 20px !important; /* Add some padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a subtle shadow */
-    color: #fff !important; /* Ensure text is white for contrast */
-}
-
-/* Set the background color of the entire page to black */
-#login-body {
-    background-color: #000 !important; /* Black background */
-    color: #fff !important; /* White text for better contrast */
-}
-
-/* Style the login container */
-#login-container {
-    background-color: #333 !important; /* Dark grey background */
-    border-radius: 10px !important; /* Rounded corners */
-    padding: 20px !important; /* Add some padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a subtle shadow */
-    color: #fff !important; /* Ensure text is white for contrast */
-}
-
-.mb-3 {
-    color: #333 !important; /* Dark grey text for better readability */
-}
-
 
 
 
