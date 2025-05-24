@@ -93,31 +93,31 @@ nav {
 }
 
 /* Set the background color of the entire page to black */
-#signup-container {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text for better contrast */
+#signup-body {
+    background-color: #000 !important; /* Black background */
+    color: #fff !important; /* White text for better contrast */
 }
 
 /* Style the login container */
 #signup-container {
-    background-color: #333; /* Dark grey background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add some padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: #333 !important; /* Dark grey background */
+    border-radius: 10px !important; /* Rounded corners */
+    padding: 20px !important; /* Add some padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a subtle shadow */
 }
 
 /* Set the background color of the entire page to black */
 #login-body {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text for better contrast */
+    background-color: #000 !important; /* Black background */
+    color: #fff !important; /* White text for better contrast */
 }
 
 /* Style the login container */
 #login-container {
-    background-color: #333; /* Dark grey background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add some padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: #333 !important; /* Dark grey background */
+    border-radius: 10px !important; /* Rounded corners */
+    padding: 20px !important; /* Add some padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a subtle shadow */
 }
 
 
