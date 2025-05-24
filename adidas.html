@@ -252,5 +252,39 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+const cart = [];
+const cartItems = document.getElementById('cart-items');
+const cartTotal = document.getElementById('cart-total');
+
+// Attach event listeners to all Add to Bag buttons
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+        const id = button.getAttribute('data-id');
+        const sizeSelect = document.getElementById('size-' + id);
+        const colorSelect = document.getElementById('color-' + id);
+        const size = sizeSelect ? sizeSelect.value : 'N/A';
+        const color = colorSelect ? colorSelect.value : 'N/A';
+
+        cart.push({ name, price, size, color });
+        updateCart();
+    });
+});
+
+function updateCart() {
+    cartItems.innerHTML = '';
+    let total = 0;
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.textContent = `${item.name} (Size: ${item.size}, Color: ${item.color}) - P${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+        total += item.price;
+    });
+    cartTotal.textContent = `Total: P${total.toFixed(2)}`;
+}
+</script>
 </body>
 </html>
