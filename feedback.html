@@ -91,6 +91,15 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                    <!--Submit Thank You Message-->
+                    <script>
+                     document.getElementById('feedback-form').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Prevent actual form submission
+                        alert('Thank you for your feedback!');
+                        // Optionally, clear the form:
+                        event.target.reset();
+                        });
+                    </script>
                 </div>
             </div>
     </main>
