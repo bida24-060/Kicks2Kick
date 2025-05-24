@@ -83,6 +83,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 function updateCart() {
     cartItems.innerHTML = '';
     let total = 0;
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.forEach(item => {
         const li = document.createElement('li');
         li.className = 'list-group-item';
