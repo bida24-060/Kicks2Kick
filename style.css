@@ -106,4 +106,22 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
+/* Set the background color of the entire page to black */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for better contrast */
+}
+
+/* Style the login container */
+#login-container {
+    background-color: #333; /* Dark grey background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+
+
+
 
