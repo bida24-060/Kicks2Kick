@@ -72,6 +72,12 @@
                 <br>
             </div>
         </div>
+        <!-- Add this inside your <main> or just before </body> -->
+            <div class="container my-5">
+                <h3>Your Bag</h3>
+                <ul id="cart-items" class="list-group"></ul>
+                <p id="cart-total" class="mt-3"><strong>Total: P0.00</strong></p>
+            </div>
         <!--Product cards-->
         <!--F50 Pro Card-->
         <div class="container mt-4">
@@ -201,10 +207,10 @@
                                 <option value="11">11</option>
                             </select>
                             <label for="color-predatorFold-Over" class="form-label mt-3">Select Color:</label>
-                            <selection id="color-predatorFold-Over" class="form-select">
+                            <select id="color-predatorFold-Over" class="form-select">
                                 <option value="red">Red</option>
                                 <option value="black">Black</option>
-                            </selection>
+                            </select>
                             <button class="btn btn-success mt-3 add-to-cart" data-name="predatorFold-Over" data-price="3500.00" data-id="predatorFold-Over">Add to Bag</button>
                         </div>
                     </div>
