@@ -43,19 +43,8 @@ a:hover {
 
 main { 
     color: #0a0a0a;
+     margin-top: 80px;
 }
-
-nav {
-    background-color: #333;
-    color: white;
-    text-align: right;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-}
-
 
 /*Dropdown Menu*/
 .nav-item.dropdown:hover .dropdown-menu {
@@ -66,10 +55,12 @@ nav {
     color: limegreen;
 }
 
-
-main {
-    margin-top: 80px; /* Adjust based on your navbar height */
+.navbar navbar-expand-lg navbar-dark bg-dark {
+    position: fixed !important;
 }
+
+
+
 
 
 
