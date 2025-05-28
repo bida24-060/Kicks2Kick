@@ -51,11 +51,11 @@ main {
     display: block;
 }
 
-.btn btn-primary w-100 {
+.btn {
     color: limegreen;
 }
 
-.navbar navbar-expand-lg navbar-dark bg-dark {
+.navbar {
     position: fixed !important;
 }
 
