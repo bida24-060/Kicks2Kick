@@ -18,7 +18,7 @@ nav a:hover {
     text-decoration: underline;
 
 }
-/*footer style*/
+
 footer {
     background-color: #333;
     color: white;
@@ -41,20 +41,60 @@ a:hover {
 }
 
 
+h3 {
+    text-decoration: cursive;
+}
+
 main { 
     color: #0a0a0a;
-     margin-top: 80px;
 }
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accessories-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.accessories-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 
 /*Dropdown Menu*/
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.btn {
+.btn btn-primary w-100 {
     color: limegreen;
 }
-
 
 
 
